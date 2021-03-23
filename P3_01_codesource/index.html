@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<title> Location Vélô Toulouse</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+	<meta name="description" content="Vélô Toulouse Location de vélos en libre service à Toulouse."/>
+	<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+	<link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet"/>
+	<link rel="stylesheet" href = "CSS/projet3.css"/>
+	<link rel="icon" type="image/png" href="favivalo1.png"/>
+	
+</head> 
+<body>
+	<div id="entete">
+		<img src="images/logo.png" alt="Logo de velô Toulouse" id="logo" class="png"/>
+		<p>Location de vélos à Toulouse</p>
+	</div>
+	<!--Diaporama-->
+	<header id="slideshow" class="slideshow">
+		<img src="images/veloloc.jpg" alt="Station de location de vélos"/>
+		<div class="button">
+			<div class="prevBtn"></div>
+			<div class="pauseBtn"></div>
+			<div class="nextBtn"></div>  
+		</div>
+	</header>
+	<!--Carte-->	
+	<section id="localisation">
+		<div id="carte_conteneur">
+			<div id="map"></div>
+			<h1 id='notice'>Sélectionnez votre station</h1>
+			<div id="notice_icone">
+				<div class="icone1"></div><span>+ de 4 vélos </span>
+				<div class="icone2"></div><span>- de 4 vélos </span>
+				<div class="icone3"></div><span>Station fermée</span>
+			</div>
+		</div>
+		<!--Encart "Votre Station"-->
+		<aside id="encart">
+			<div id="info_station">
+				<h2 id="titre">Votre station</h2>
+				<p>Adresse :</p>
+				<p id="nom_station"></p>
+				<p id="adresse_station"></p>
+				<p>Nombre de places :<span id="nb_velos"></span></p>	        	 	
+				<p>Cycles disponibles :<span id="velo_dispo"></span></p>
+				<!--Champs du formulaire-->		
+				<form>
+					<div>
+						<label for="name">Nom</label>
+						<input type="text" name="name" id="name" minlength="2" maxlength="15" required/>
+						<label for="firstname">Prénom</label>
+						<input type="text" name="firstname" id="firstname" minlength="2" maxlength="15" required/>
+						<button id="reserver">Réserver</button>
+					</div>
+				</form>
+				
+			</div>
+			<div id="lack_name"></div>
+		</aside>
+	</section>
+	<!--Canvas-->
+	<footer id="signature">
+		<div id ="validation_canvas">
+			<canvas id="canvas" width="240" height="230"></canvas>
+			<div>
+				<button id="valider">Valider</button>
+				<button id ="restart">Recommencer</button>
+				<button id ="annuler">Annuler</button>
+			</div>
+		</div>
+		<!--Encart confirmation-->
+		<div id="confirmation">
+			<p>Cycle reservé par :</p>
+			<span id="encart_nom"></span>
+			<span id="encart_prenom"></span>
+			<p>Station :</p>
+			<p id="encart_adresse"></p>
+			<p>Temps restant :</p>
+			<div id="timer"></div>
+			<p id="chrono"></p>
+		</div>
+		
+	</footer>
+	<script src="JS/carte.js"></script>
+	<script src="JS/canvas.js"></script>
+	<script src="JS/reservation.js"></script>
+	<script src="JS/timer.js"></script>
+	<script src="JS/slider.js"></script>
+	<script src="JS/main.js"></script>
+</body>
+</html>
