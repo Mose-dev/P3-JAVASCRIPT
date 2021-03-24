@@ -3,7 +3,7 @@
 <p>Code source du Projet 3 de la formation Développeur Web d'OpenClassrooms, intitulé "Concevez une carte interactive de location de vélos"</p>
 <p>
     <img src="images/veloloc.png" alt="Carte des stations de vélos à louer" />
-      <img alt="Une étudiante" src="images/apprenant2.jpg" />
+      <img alt="Carte des stations de vélos à louer" src="images/veloloc.png" />
 
 </p>
 
