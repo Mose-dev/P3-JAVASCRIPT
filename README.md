@@ -47,7 +47,7 @@
       <li>API Canvas</li>
       <li>API WebStorage</li>
       <li>API JCDecaux</li>
-      <li>API Leaflet</li>
+      <li>API mapbox</li>
       <li>API OpenStreetMap</li>
   </ul>
 
