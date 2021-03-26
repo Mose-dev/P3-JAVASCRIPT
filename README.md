@@ -55,6 +55,6 @@
 👤 **Moïse Velez**
 
 * Website: http://moise-velez.com
-* Github: [@Mose-dev](https://github.com/Mose-dev)
+* LinkedIn: www.linkedin.com/in/moïse-velez
 
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
